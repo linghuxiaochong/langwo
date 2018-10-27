@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择院线</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/cinemases.css">
+</head>
+
+<body>
+    <!--导航-->
+    <header>
+        <nav>
+            <a href="index.html"><img src="../img/header_footer/logo.png" alt="" /></a>
+
+            <form action="">
+                <select name="city" id="">
+                    <option value="chengdu">成都</option>
+                    <option value="chongqing">重庆</option>
+                </select>
+            </form>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="cinemas.html">院线</a></li>
+                <li><a href="movies-list.html">榜单</a></li>
+                <li><a href="hot.html">热点</a></li>
+            </ul>
+            <form action="">
+                <button><img src="../img/header_footer/search.png" alt="" /></button>
+                <input type="text" placeholder="找影视剧、影人、影院" />
+            </form>
+            <ul>
+                <li>
+                    <i><img src="" alt="" /></i>
+                    <span></span>
+                    <ul>
+                        <li><a href="login.html">登录</a></li>
+                        <li><a href="signup.html">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <div id="movie">
+           
+        </div>
+    </div>
+    <main>
+        <div>
+            <aside>
+                <span>品牌:</span>
+                <form action="">
+                    <input type="radio" name="pinpai" id="all" checked />
+                    <label for="all">全部</label>
+                    <input type="radio" name="pinpai" id="wanda" />
+                    <label for="wanda">万达影城</label>
+                    <input type="radio" name="pinpai" id="taipingyang" />
+                    <label for="taipingyang">太平洋电影城</label>
+                    <input type="radio" name="pinpai" id="xingmeiguoji" />
+                    <label for="xingmeiguoji">星美国际影城</label>
+                    <input type="radio" name="pinpai" id="CGV" />
+                    <label for="CGV">CGV影城</label>
+                    <input type="radio" name="pinpai" id="chengtianjiahe" />
+                    <label for="chengtianjiahe">橙天嘉禾影城</label>
+                    <input type="radio" name="pinpai" id="hengdian" />
+                    <label for="hengdian">横店影城</label>
+                    <input type="radio" name="pinpai" id="jinyi" />
+                    <label for="jinyi">金逸影城</label>
+                    <input type="radio" name="pinpai" id="dadi" />
+                    <label for="dadi">大地影院</label>
+                    <input type="radio" name="pinpai" id="lumiai" />
+                    <label for="lumiai">卢米埃影城</label>
+                    <input type="radio" name="pinpai" id="UME" />
+                    <label for="UME">UME国际影城</label>
+                    <input type="radio" name="pinpai" id="SFC" />
+                    <label for="SFC">SFC上影影城</label>
+                    <input type="radio" name="pinpai" id="baoliguoji" />
+                    <label for="baoliguoji">保利国际影城</label>
+                    <input type="radio" name="pinpai" id="zhongyingguoji" />
+                    <label for="zhongyingguoji">中影国际影城</label>
+                    <input type="radio" name="pinpai" id="yuejie" />
+                    <label for="yuejie">越界影城</label>
+                    <input type="radio" name="pinpai" id="heping" />
+                    <label for="heping">和平电影城</label>
+                    <input type="radio" name="pinpai" id="xingfulanhai" />
+                    <label for="xingfulanhai">幸福蓝海国际影城</label>
+                    <input type="radio" name="pinpai" id="yatu" />
+                    <label for="yatu">雅图数字影院</label>
+                    <input type="radio" name="pinpai" id="xinshidai" />
+                    <label for="xinshidai">新时代影城</label>
+                    <input type="radio" name="pinpai" id="yaolaichenglong" />
+                    <label for="yaolaichenglong">耀莱成龙国际影城</label>
+                    <input type="radio" name="pinpai" id="hengda" />
+                    <label for="hengda">恒大影城</label>
+                    <input type="radio" name="pinpai" id="emei" />
+                    <label for="emei">峨眉影城</label>
+                    <input type="radio" name="pinpai" id="bailigong" />
+                    <label for="bailigong">百丽宫影城</label>
+                    <input type="radio" name="pinpai" id="bailaohui" />
+                    <label for="bailaohui">百老汇影城</label>
+                    <input type="radio" name="pinpai" id="qita" />
+                    <label for="qita">其他</label>
+                </form>
+            </aside>
+            <aside>
+                <span>行政区:</span>
+                <form action="">
+                    <input type="radio" name="xingzheng" id="allxingzheng" checked />
+                    <label for="allxingzheng">全部</label>
+                    <input type="radio" name="xingzheng" id="ditiefujin" />
+                    <label for="ditiefujin">地铁附近</label>
+                    <input type="radio" name="xingzheng" id="wuhouqu" />
+                    <label for="wuhouqu">武侯区</label>
+                    <input type="radio" name="xingzheng" id="pixian" />
+                    <label for="pixian">郫县</label>
+                    <input type="radio" name="xingzheng" id="jinjiangqu" />
+                    <label for="jinjiangqu">锦江区</label>
+                    <input type="radio" name="xingzheng" id="qingyangqu" />
+                    <label for="qingyangqu">青羊区</label>
+                    <input type="radio" name="xingzheng" id="shuangliuqu" />
+                    <label for="shuangliuqu">双流区</label>
+                    <input type="radio" name="xingzheng" id="xinduqu" />
+                    <label for="xinduqu">新都区</label>
+                    <input type="radio" name="xingzheng" id="chenghuaqu" />
+                    <label for="chenghuaqu">成华区</label>
+                    <input type="radio" name="xingzheng" id="jinniuqu" />
+                    <label for="jinniuqu">金牛区</label>
+                    <input type="radio" name="xingzheng" id="longquanyiqu" />
+                    <label for="longquanyiqu">龙泉驿区</label>
+                    <input type="radio" name="xingzheng" id="wenjiangqu" />
+                    <label for="wenjiangqu">温江区</label>
+                    <input type="radio" name="xingzheng" id="jintangxian" />
+                    <label for="jintangxian">金堂县</label>
+                    <input type="radio" name="xingzheng" id="chongshoushi" />
+                    <label for="chongshoushi">崇州市</label>
+                    <input type="radio" name="xingzheng" id="dujiangyanshi" />
+                    <label for="dujiangyanshi">都江堰市</label>
+                    <input type="radio" name="xingzheng" id="dayixian" />
+                    <label for="dayixian">大邑县</label>
+                    <input type="radio" name="xingzheng" id="qingbaijiangqu" />
+                    <label for="qingbaijiangqu">青白江区</label>
+                    <input type="radio" name="xingzheng" id="jianyangshi" />
+                    <label for="jianyangshi">简阳市</label>
+                    <input type="radio" name="xingzheng" id="pengzhoushi" />
+                    <label for="pengzhoushi">彭州市</label>
+                    <input type="radio" name="xingzheng" id="xinjinxian" />
+                    <label for="xinjinxian">新津县</label>
+                    <input type="radio" name="xingzheng" id="gaoxinqu" />
+                    <label for="gaoxinqu">高新区</label>
+                    <input type="radio" name="xingzheng" id="pujiangxian" />
+                    <label for="pujiangxian">蒲江县</label>
+                </form>
+            </aside>
+            <aside>
+                <span>特殊厅:</span>
+                <form action="">
+                    <input type="radio" name="teshuting" id="allting" checked />
+                    <label for="allting">全部</label>
+                    <input type="radio" name="teshuting" id="IMAX" />
+                    <label for="IMAX">IMAX厅</label>
+                    <input type="radio" name="teshuting" id="CGS" />
+                    <label for="CGS">CGS中国巨幕厅</label>
+                    <input type="radio" name="teshuting" id="dubiquanjingsheng" />
+                    <label for="dubiquanjingsheng">杜比全景声厅</label>
+                    <input type="radio" name="teshuting" id="Dolby" />
+                    <label for="Dolby">Dolby Cinema厅</label>
+                    <input type="radio" name="teshuting" id="ReaID" />
+                    <label for="ReaID">ReaID厅</label>
+                    <input type="radio" name="teshuting" id="ReaID6FL" />
+                    <label for="ReaID6FL">ReaID 6FL厅</label>
+                    <input type="radio" name="teshuting" id="LUXE" />
+                    <label for="LUXE">LUXE巨幕厅</label>
+                    <input type="radio" name="teshuting" id="4DX" />
+                    <label for="4DX">4DX厅</label>
+                    <input type="radio" name="teshuting" id="DTS" />
+                    <label for="DTS">DTS:X 临境音厅</label>
+                    <input type="radio" name="teshuting" id="ertong" />
+                    <label for="ertong">儿童厅</label>
+                    <input type="radio" name="teshuting" id="4K" />
+                    <label for="4K">4K厅</label>
+                    <input type="radio" name="teshuting" id="4D" />
+                    <label for="4D">4D厅</label>
+                    <input type="radio" name="teshuting" id="jumu" />
+                    <label for="jumu">巨幕厅</label>
+                </form>
+            </aside>
+        </div>
+        <h1>影院列表</h1>
+        <article id="cinemases">
+            <div>
+                <div>
+                    <h2>承光国际影城</h2>
+                    <p>地址：双流区临港路二段承光影城</p>
+                </div>
+                <p><span>￥<span>33</span></span>起</p>
+                <a href="">选座购票</a>
+            </div>
+            <div>
+                <div>
+                    <h2>承光国际影城</h2>
+                    <p>地址：双流区临港路二段承光影城</p>
+                </div>
+                <p><span>￥<span>33</span></span>起</p>
+                <a href="">选座购票</a>
+            </div>
+            <div>
+                <div>
+                    <h2>承光国际影城</h2>
+                    <p>地址：双流区临港路二段承光影城</p>
+                </div>
+                <p><span>￥<span>33</span></span>起</p>
+                <a href="">选座购票</a>
+            </div>
+        </article>
+        <!-- <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>...</li>
+            <li>下一页</li>
+        </ul> -->
+    </main>
+    <footer>
+        <div>
+            <p>&copy;2016 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489号-1 京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+
+            <p>北京猫眼文化传媒有限公司</p>
+        </div>
+    </footer>
+    <script src="../js/lodash.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/cinemases.js"></script>
+</body>
+
+</html>

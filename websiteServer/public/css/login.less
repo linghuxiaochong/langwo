@@ -1,0 +1,106 @@
+main{
+  width:870px;
+  margin: 0 auto;
+  header{
+    padding: 40px 0;
+  }
+  article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    table{
+      font-size: 14px;
+      a{
+        color: #ef4339;
+        text-decoration: none;
+      }
+      i{
+        display: inline-block;
+        vertical-align: middle;
+        background-image: url("../img/login/icon.png");
+        width: 10px;
+        height:  14px;
+        background-position: -17px -18px;
+      }
+      tr{
+        margin: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+      }
+      tr:first-of-type{
+        margin: 0;
+        height: 20px;
+        td:first-of-type{
+          i:first-of-type{
+            position: relative;
+            top: 36px;
+            left: -50px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url("../img/login/icon.png");
+            width: 17px;
+            height:  17px;
+            background-position: 0 -127px;
+          }
+          i:last-of-type{
+            position: relative;
+            top: 84px;
+            left: -68px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url("../img/login/icon.png");
+            width: 16px;
+            height:  18px;
+            background-position: 0 -36px;
+          }
+        }
+        td:last-of-type{
+          font-size: 12px;
+        }
+      }
+      tr:nth-of-type(4){
+        margin: 0;
+        height: 30px;
+        a{
+          font-size: 12px;
+        }
+      }
+      input::-webkit-input-placeholder{
+        color: #cccccc;
+      }
+      input[type="text"]{
+        outline: none;
+        padding: 0 30px;
+        width: 270px;
+        height: 36px;
+        box-sizing: border-box;
+      }
+      input[type="password"]{
+        outline: none;
+        padding: 0 30px;
+        width: 270px;
+        height: 36px;
+        box-sizing: border-box;
+      }
+      input[type='button']{
+        outline: none;
+        color: white;
+        width: 270px;
+        height: 34px;
+        background:linear-gradient(to bottom,#ec454a,#e02126) ;
+        border: 0;
+        border-radius: 4px;
+
+      }
+    }
+  }
+  footer{
+    font-size: 12px;
+    color: #cccccc;
+    text-align: center;
+    margin: 70px 0;
+  }
+}
+

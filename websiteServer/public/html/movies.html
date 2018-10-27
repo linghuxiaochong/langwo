@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>电影</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/movies.css" />
+</head>
+
+<body>
+    <!--导航-->
+    <header>
+        <nav>
+            <a href="index.html"><img src="../img/header_footer/logo.png" alt="" /></a>
+
+            <form action="">
+                <select name="city" id="">
+                    <option value="chengdu">成都</option>
+                    <option value="chongqing">重庆</option>
+                </select>
+            </form>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="cinemas.html">院线</a></li>
+                <li><a href="movies-list.html">榜单</a></li>
+                <li><a href="hot.html">热点</a></li>
+            </ul>
+            <form action="">
+                <button><img src="../img/header_footer/search.png" alt="" /></button>
+                <input type="text" placeholder="找影视剧、影人、影院" />
+            </form>
+            <ul>
+                <li>
+                    <i><img src="" alt="" /></i>
+                    <span></span>
+                    <ul>
+                        <li><a href="login.html">登录</a></li>
+                        <li><a href="signup.html">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="top">
+        <ul>
+            <li><a href="">正在热映</a><span></span></li>
+            <li><a href="">即将上线</a><span></span></li>
+            <li><a href="">经典影片</a><span></span></li>
+        </ul>
+    </div>
+    <main>
+        <div>
+            <aside>
+                <span>类型:</span>
+                <form action="">
+                    <input type="radio" name="leixing" id="all" checked />
+                    <label for="all">全部</label>
+                    <input type="radio" name="leixing" id="aiqing" />
+                    <label for="aiqing">爱情</label>
+                    <input type="radio" name="leixing" id="xiju" />
+                    <label for="xiju">喜剧</label>
+                    <input type="radio" name="leixing" id="donghua" />
+                    <label for="donghua">动画</label>
+                    <input type="radio" name="leixing" id="juqing" />
+                    <label for="juqing">剧情</label>
+                    <input type="radio" name="leixing" id="kongbu" />
+                    <label for="kongbu">恐怖</label>
+                    <input type="radio" name="leixing" id="jingsong" />
+                    <label for="jingsong">惊悚</label>
+                    <input type="radio" name="leixing" id="kehuan" />
+                    <label for="kehuan">科幻</label>
+                    <input type="radio" name="leixing" id="dongzuo" />
+                    <label for="dongzuo">动作</label>
+                    <input type="radio" name="leixing" id="xuanyi" />
+                    <label for="xuanyi">悬疑</label>
+                    <input type="radio" name="leixing" id="fanzui" />
+                    <label for="fanzui">犯罪</label>
+                    <input type="radio" name="leixing" id="maoxian" />
+                    <label for="maoxian">冒险</label>
+                    <input type="radio" name="leixing" id="zhanzheng" />
+                    <label for="zhanzheng">战争</label>
+                    <input type="radio" name="leixing" id="qihuan" />
+                    <label for="qihuan">奇幻</label>
+                    <input type="radio" name="leixing" id="yundong" />
+                    <label for="yundong">运动</label>
+                    <input type="radio" name="leixing" id="jiating" />
+                    <label for="jiating">家庭</label>
+                    <input type="radio" name="leixing" id="guzhuang" />
+                    <label for="guzhuang">古装</label>
+                    <input type="radio" name="leixing" id="wuxia" />
+                    <label for="wuxia">武侠</label>
+                    <input type="radio" name="leixing" id="xibu" />
+                    <label for="xibu">西部</label>
+                    <input type="radio" name="leixing" id="lishi" />
+                    <label for="lishi">历史</label>
+                    <input type="radio" name="leixing" id="zhuanji" />
+                    <label for="zhuanji">传记</label>
+                    <input type="radio" name="leixing" id="qingse" />
+                    <label for="qingse">情色</label>
+                    <input type="radio" name="leixing" id="gewu" />
+                    <label for="gewu">歌舞</label>
+                    <input type="radio" name="leixing" id="heisedianying" />
+                    <label for="heisedianying">黑色电影</label>
+                    <input type="radio" name="leixing" id="duanpian" />
+                    <label for="duanpian">短片</label>
+                    <input type="radio" name="leixing" id="jilupian" />
+                    <label for="jilupian">纪录片</label>
+                    <input type="radio" name="leixing" id="qita" />
+                    <label for="qita">其他</label>
+                </form>
+            </aside>
+            <aside>
+                <span>区域:</span>
+                <form action="">
+                    <input type="radio" name="leixing" id="allquyu" checked />
+                    <label for="allquyu">全部</label>
+                    <input type="radio" name="leixing" id="dalu" />
+                    <label for="dalu">大陆</label>
+                    <input type="radio" name="leixing" id="meiguo" />
+                    <label for="meiguo">美国</label>
+                    <input type="radio" name="leixing" id="hanguo" />
+                    <label for="hanguo">韩国</label>
+                    <input type="radio" name="leixing" id="riben" />
+                    <label for="riben">日本</label>
+                    <input type="radio" name="leixing" id="zhongguoxianggang" />
+                    <label for="zhongguoxianggang">中国香港</label>
+                    <input type="radio" name="leixing" id="zhongguotaiwan" />
+                    <label for="zhongguotaiwan">中国台湾</label>
+                    <input type="radio" name="leixing" id="taiguo" />
+                    <label for="taiguo">泰国</label>
+                    <input type="radio" name="leixing" id="yindu" />
+                    <label for="yindu">印度</label>
+                    <input type="radio" name="leixing" id="faguo" />
+                    <label for="faguo">法国</label>
+                    <input type="radio" name="leixing" id="yingguo" />
+                    <label for="yingguo">英国</label>
+                    <input type="radio" name="leixing" id="eluosi" />
+                    <label for="eluosi">俄罗斯</label>
+                    <input type="radio" name="leixing" id="yidali" />
+                    <label for="yidali">意大利</label>
+                    <input type="radio" name="leixing" id="xibanya" />
+                    <label for="xibanya">西班牙</label>
+                    <input type="radio" name="leixing" id="deguo" />
+                    <label for="deguo">德国</label>
+                    <input type="radio" name="leixing" id="bolan" />
+                    <label for="bolan">波兰</label>
+                    <input type="radio" name="leixing" id="aodaliya" />
+                    <label for="aodaliya">澳大利亚</label>
+                    <input type="radio" name="leixing" id="yilang" />
+                    <label for="yilang">伊朗</label>
+                    <input type="radio" name="leixing" id="qitaquyu" />
+                    <label for="qitaquyu">其他</label>
+                </form>
+            </aside>
+            <aside>
+                <span>年代:</span>
+                <form action="">
+                    <input type="radio" name="leixing" id="quanbuniandai" checked />
+                    <label for="quanbuniandai">全部</label>
+                    <input type="radio" name="leixing" id="2017yihou" />
+                    <label for="2017yihou">2017以后</label>
+                    <input type="radio" name="leixing" id="2017" />
+                    <label for="2017">2017</label>
+                    <input type="radio" name="leixing" id="2016" />
+                    <label for="2016">2016</label>
+                    <input type="radio" name="leixing" id="2015" />
+                    <label for="2015">2015</label>
+                    <input type="radio" name="leixing" id="2014" />
+                    <label for="2014">2014</label>
+                    <input type="radio" name="leixing" id="2013" />
+                    <label for="2013">2013</label>
+                    <input type="radio" name="leixing" id="2012" />
+                    <label for="2012">2012</label>
+                    <input type="radio" name="leixing" id="2011" />
+                    <label for="2011">2011</label>
+                    <input type="radio" name="leixing" id="2000-2010" />
+                    <label for="2000-2010">2000-2010</label>
+                    <input type="radio" name="leixing" id="90niandai" />
+                    <label for="90niandai">90年代</label>
+                    <input type="radio" name="leixing" id="80niandai" />
+                    <label for="80niandai">80年代</label>
+                    <input type="radio" name="leixing" id="70niandai" />
+                    <label for="70niandai">70年代</label>
+                    <input type="radio" name="leixing" id="gengzao" />
+                    <label for="gengzao">更早</label>
+                </form>
+            </aside>
+        </div>
+        <form action="">
+            <input type="radio" name="remenpaixu" id="remenpaixu" checked />
+            <label for="remenpaixu">按热门排序</label>
+            <input type="radio" name="remenpaixu" id="shijianpaixu" />
+            <label for="shijianpaixu">按时间排序</label>
+            <input type="radio" name="remenpaixu" id="pingjiapaixu" />
+            <label for="pingjiapaixu">按评价排序</label>
+            <input type="checkbox" name="kebofang" />可播放
+        </form>
+        <!--电影-->
+        <article id="movies">
+        </article>
+        <!--页码-->
+        <form action="" id="page">
+        </form>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;2016 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489号-1 京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+
+            <p>北京猫眼文化传媒有限公司</p>
+        </div>
+    </footer>
+    <script src="../js/lodash.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/movies.js"></script>
+</body>
+
+</html>

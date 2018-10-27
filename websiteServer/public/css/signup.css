@@ -1,0 +1,81 @@
+header {
+  border-bottom: 2px solid #ef4339;
+}
+header nav {
+  padding: 10px 0;
+  width: 870px;
+  margin: 0 auto;
+}
+main {
+  border-bottom: 1px solid #d8d8d8;
+}
+main form {
+  width: 870px;
+  margin: 40px auto 0;
+}
+main tr input[value='同意以下协议并注册'] {
+  outline: none;
+  width: 180px;
+  height: 36px;
+  border: 0;
+  color: white;
+  background: linear-gradient(to bottom, #ec454a, #e02126);
+  border-radius: 4px;
+}
+main tr td {
+  font-size: 14px;
+  height: 46px;
+  vertical-align: inherit;
+  padding: 10px;
+}
+main tr td a {
+  color: #ef4339;
+  font-size: 12px;
+  text-decoration: none;
+}
+main tr td input {
+  outline: none;
+  height: 32px;
+  width: 260px;
+}
+main tr td:first-of-type {
+  line-height: 36px;
+  padding-right: 10px;
+  float: right;
+}
+main tr td:last-of-type {
+  line-height: 36px;
+  padding-right: 10px;
+}
+main tr:first-of-type td:last-of-type {
+  font-size: 12px;
+  color: #cccccc;
+}
+main tr:nth-of-type(2) > td {
+  height: 30px;
+}
+main tr:nth-of-type(2) > td input {
+  width: 136px;
+  height: 20px;
+}
+main tr:nth-of-type(5) td {
+  height: 30px;
+}
+main tr:nth-of-type(5) td span {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  width: 85px;
+  background-color: #d8d8d8;
+}
+footer {
+  width: 870px;
+  margin: 20px auto;
+}
+footer p {
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+}

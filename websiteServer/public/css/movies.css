@@ -1,0 +1,315 @@
+header {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border-bottom: 1px solid #d8d8d8;
+}
+nav {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav > form:first-of-type > select {
+  outline: none;
+  border: 0;
+  font-size: 16px;
+  line-height: 80px;
+  margin: 0  20px;
+}
+nav > ul:first-of-type {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+nav > ul:first-of-type li {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+}
+nav > ul:first-of-type li a {
+  display: inline-block;
+  height: 80px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 80px;
+}
+nav > ul:first-of-type li:hover {
+  background-color: #ef4339;
+}
+nav > ul:first-of-type li:hover a {
+  text-decoration: none;
+  color: white;
+}
+nav > form:last-of-type {
+  margin-right: 20px;
+}
+nav > form:last-of-type button {
+  outline: none;
+  position: relative;
+  left: 265px;
+  top: -1px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+}
+nav > form:last-of-type input {
+  outline: none;
+  font-size: 12px;
+  height: 40px;
+  width: 260px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  background-color: #faf8fa;
+  padding-left: 20px ;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+nav > ul:last-of-type {
+  position: relative;
+  text-align: center;
+}
+nav > ul:last-of-type > li {
+  padding-top: 20px;
+  height: 80px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+nav > ul:last-of-type ul {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border: 1px solid #cccccc;
+  border-top-color: transparent;
+  opacity: 0;
+  background-color: white;
+  background-clip: content-box;
+  box-sizing: border-box;
+  transition: all ease-out 200ms;
+}
+nav > ul:last-of-type ul li {
+  padding: 10px 20px;
+}
+nav > ul:last-of-type ul a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+nav > ul:last-of-type i {
+  float: left;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/header_footer/login.png");
+}
+nav > ul:last-of-type span {
+  transform-origin: 5px 2px;
+  transition: all ease-out 150ms;
+  margin: 15px 10px;
+  float: left;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: #676767;
+}
+nav > ul:last-of-type > li:hover ul {
+  padding-top: 60px;
+}
+nav > ul:last-of-type > li:hover ul {
+  opacity: 1;
+  transition-delay: 130ms;
+}
+nav > ul:last-of-type > li:hover span {
+  transform: rotate(180deg);
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.top {
+  background-color: #48474b;
+  margin-top: 80px;
+}
+.top ul {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.top ul li {
+  margin: 0 40px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top ul li a {
+  line-height: 50px;
+  color: #9a9a86;
+}
+.top ul li span {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: white;
+}
+.top ul li:hover a {
+  color: #ef4339;
+}
+.top ul li:hover span {
+  opacity: 1;
+}
+main {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  box-sizing: border-box;
+}
+main > div:first-of-type {
+  padding: 0 20px;
+  border: 1px solid #cccccc;
+}
+main > div:first-of-type aside {
+  padding: 10px 0;
+  border-bottom: 1px dotted #cccccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+main > div:first-of-type aside span {
+  width: 60px;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+main > div:first-of-type aside form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+main > div:first-of-type aside form label {
+  margin-right: 10px;
+  color: black;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 14px;
+}
+main > div:first-of-type aside form input {
+  display: none;
+}
+main > div:first-of-type aside form input:checked + label {
+  color: white;
+  background-color: #ef4339;
+}
+main > form:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: 40px 0 20px;
+}
+main > form:first-of-type input:not(:last-of-type) {
+  display: none;
+}
+main > form:first-of-type label:nth-of-type(3) {
+  flex-grow: 2;
+}
+main > form:first-of-type label {
+  margin-right: 30px;
+  font-size: 14px;
+}
+main > form:first-of-type label:before {
+  content: "";
+  margin-right: 8px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+}
+main > form:first-of-type input:checked + label:before {
+  border: 5px solid #ef4339;
+}
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main article figure:hover img {
+  box-shadow: 0 4px 10px #9a9a9a;
+}
+main article figure:hover h1 {
+  color: #ef4339;
+}
+main article figure {
+  margin: 0 2px 20px 0;
+  width: 160px;
+  text-align: center;
+}
+main article figure h1 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 14px 0;
+}
+main article figure p {
+  font-style: italic;
+  color: #ffb400;
+  text-transform: capitalize;
+  font-size: 18px;
+}
+main article figure p span {
+  font-size: 24px;
+}
+main #page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  justify-content: center;
+}
+main #page > a {
+  margin-right: 14px;
+  color: black;
+  font-size: 14px;
+  padding: 10px 16px;
+  border: 1px solid #d8d8d8;
+}
+main #page > a:hover {
+  color: white;
+  background-color: #ef4339;
+}
+main #page label {
+  margin-right: 14px;
+  color: black;
+  font-size: 14px;
+  padding: 10px 16px;
+  border: 1px solid #d8d8d8;
+}
+main #page input {
+  display: none;
+}
+main #page input:checked + label {
+  color: white;
+  background-color: #ef4339;
+}
+footer {
+  background-color: #282628;
+  height: 125px;
+  text-align: center;
+}
+footer > div {
+  padding-top: 60px;
+}
+footer p {
+  color: #676767;
+  font-size: 14px;
+}

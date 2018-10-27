@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选择座位</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/seats.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="../img/header_footer/logo.png" alt="" /></a>
+
+            <form action="">
+                <select name="city" id="">
+                    <option value="chengdu">成都</option>
+                    <option value="chongqing">重庆</option>
+                </select>
+            </form>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="cinemas.html">院线</a></li>
+                <li><a href="movies-list.html">榜单</a></li>
+                <li><a href="hot.html">热点</a></li>
+            </ul>
+            <form action="">
+                <button><img src="../img/header_footer/search.png" alt="" /></button>
+                <input type="text" placeholder="找影视剧、影人、影院" />
+            </form>
+            <ul>
+                <li>
+                    <i><img src="" alt="" /></i>
+                    <span></span>
+                    <ul>
+                        <li><a href="login.html">登录</a></li>
+                        <li><a href="signup.html">注册</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <ul>
+                <li><img src="../img/images_seat/seaticon_03.png" alt="">可选座位</li>
+                <li><img src="../img/images_seat/seaticon_07.png" alt="">已售座位</li>
+                <li><img src="../img/images_seat/07.png" alt="">已选座位</li>
+                <li><img src="../img/images_seat/Screenshot_2016-10-21-17-14-02_09.png" alt="">情侣座位</li>
+            </ul>
+            <table id="seats">
+                <tr>
+                    <td>1</td>
+                    <td class="optionalSeat"></td>
+                    <td class="soldSeat"></td>
+                    <td class="selectedSeat"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="optionalSeat"></td>
+                    <td class="soldSeat"></td>
+                    <td class="selectedSeat"></td>
+                </tr>
+                <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td class="optionalSeat"></td>
+                        <td class="soldSeat"></td>
+                        <td class="selectedSeat"></td>
+                    </tr>
+            </table>
+        </article>
+        <aside>
+            <div id="movie">
+            </div>
+            <div id="cinemas">
+            </div>
+            <div>
+                <p>座位：<span id="allSeats">最多选择5个座位</span></p>
+                <p>总价: <span>￥<span id="money">0</span></span></p>
+            </div>
+            <div>
+                <input id="affirm" type="button" value="确认选座">
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div>
+            <p>&copy;2016 猫眼电影 maoyan.com 京ICP证160733号 京ICP备16022489号-1 京公网安备 11010502030881号 网络文化经营许可证 电子公告服务规则</p>
+            <p>北京猫眼文化传媒有限公司</p>
+        </div>
+    </footer>
+    <script src="../js/lodash.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/seats.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+main {
+  width: 870px;
+  margin: 0 auto;
+}
+main header {
+  padding: 40px 0;
+}
+main article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main article table {
+  font-size: 14px;
+}
+main article table a {
+  color: #ef4339;
+  text-decoration: none;
+}
+main article table i {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/login/icon.png");
+  width: 10px;
+  height: 14px;
+  background-position: -17px -18px;
+}
+main article table tr {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+main article table tr:first-of-type {
+  margin: 0;
+  height: 20px;
+}
+main article table tr:first-of-type td:first-of-type i:first-of-type {
+  position: relative;
+  top: 36px;
+  left: -50px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/login/icon.png");
+  width: 17px;
+  height: 17px;
+  background-position: 0 -127px;
+}
+main article table tr:first-of-type td:first-of-type i:last-of-type {
+  position: relative;
+  top: 84px;
+  left: -68px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/login/icon.png");
+  width: 16px;
+  height: 18px;
+  background-position: 0 -36px;
+}
+main article table tr:first-of-type td:last-of-type {
+  font-size: 12px;
+}
+main article table tr:nth-of-type(4) {
+  margin: 0;
+  height: 30px;
+}
+main article table tr:nth-of-type(4) a {
+  font-size: 12px;
+}
+main article table input::-webkit-input-placeholder {
+  color: #cccccc;
+}
+main article table input[type="text"] {
+  outline: none;
+  padding: 0 30px;
+  width: 270px;
+  height: 36px;
+  box-sizing: border-box;
+}
+main article table input[type="password"] {
+  outline: none;
+  padding: 0 30px;
+  width: 270px;
+  height: 36px;
+  box-sizing: border-box;
+}
+main article table input[type='button'] {
+  outline: none;
+  color: white;
+  width: 270px;
+  height: 34px;
+  background: linear-gradient(to bottom, #ec454a, #e02126);
+  border: 0;
+  border-radius: 4px;
+}
+main footer {
+  font-size: 12px;
+  color: #cccccc;
+  text-align: center;
+  margin: 70px 0;
+}

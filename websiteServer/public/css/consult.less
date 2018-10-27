@@ -1,0 +1,258 @@
+header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom: 1px solid #d8d8d8;
+  }
+  nav{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    >form:first-of-type>select{
+      outline: none;
+      border: 0;
+      font-size: 16px;
+      line-height: 80px;
+      margin:0  20px;
+    }
+    >ul:first-of-type{
+      flex-grow: 1;
+      display: flex;
+      justify-content: flex-start;
+      li{
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        a{
+          display: inline-block;
+          height: 80px;
+          color: black;
+          text-decoration: none;
+          font-size: 18px;
+          line-height: 80px;
+        }
+      }
+      li:hover{
+        background-color: #ef4339;
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    >form:last-of-type{
+      margin-right: 20px;
+      button{
+        outline: none;
+        position: relative;
+        left: 265px;
+        top:-1px;
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 0;
+        border:0;
+      }
+      input{
+        outline: none;
+        font-size: 12px;
+        height: 40px;
+        width: 260px;
+        border-radius: 20px;
+        border: 1px solid #cccccc;
+        background-color: #faf8fa;
+        padding-left:20px ;
+        padding-right: 40px;
+        box-sizing: border-box;
+      }
+  
+    }
+    >ul:last-of-type{
+      position: relative;
+      text-align: center;
+      >li{
+        padding-top: 20px;
+        height: 80px;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+      ul{
+        width: 80px;
+        position: absolute;
+        top: 0;
+        left: -10px;
+        border: 1px solid #cccccc;
+        border-top-color: transparent;
+        opacity: 0;
+        background-color: white;
+        background-clip: content-box;
+        box-sizing: border-box;
+        transition: all ease-out 200ms;
+        li{
+          padding:10px 20px;
+        }
+        a {
+          color:black;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
+      i{
+        float: left;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-image: url("../img/header_footer/login.png");
+      }
+      span{
+        transform-origin:5px 2px;
+        transition: all ease-out 150ms;
+        margin: 15px 10px;
+        float: left;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-top-color: #676767;
+      }
+      >li:hover{
+        ul{
+          padding-top: 60px;
+        }
+        ul{
+          opacity: 1;
+          transition-delay: 130ms;
+        }
+        span{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  .top{
+    background-color: #48474b;
+    margin-top: 80px;
+    ul{
+      width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      li{
+        margin: 0 40px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+          line-height: 50px;
+          color: #9a9a86;
+        }
+        span{
+          opacity: 0;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          border-bottom-color: white;
+        }
+      }
+      li:hover{
+        a{
+          color: #ef4339;
+        }
+        span{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  main{
+    width: 1200px;
+    margin: 0 auto ;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+      article{
+        width: 730px;
+        .new{
+            margin-bottom: 40px;
+            >p{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-size: 26px;
+                color: #ef4339;
+                margin-bottom: 24px;
+                a{
+                  font-size: 14px;
+                  color: #ef4339;
+                }
+            }
+            >div{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                figure{
+                    margin-bottom: 10px;
+                    width: 230px;
+                    >img{
+                        width:230px;
+                        height:129px;
+                    }
+                    figcaption{
+                        >h2{
+                            font-size: 14px;
+                            font-weight: normal;
+                            line-height: 38px;
+                        }
+                        >p{
+                            font-size: 12px;
+                            color: #999;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+        .yugaopian{
+            margin-bottom: 40px;
+            >p{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                font-size: 26px;
+                color: #2d98f3;
+                margin-bottom: 24px;
+                a{
+                  font-size: 14px;
+                  color: #2d98f3;
+                }
+            }
+            >div{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                figure{
+                    margin-bottom: 10px;
+                    >img{
+                       
+                    }
+                }
+            }
+        }
+      }
+      aside{
+        width: 360px;
+      }
+      
+  }
